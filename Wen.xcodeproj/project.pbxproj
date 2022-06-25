@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D2C46C352867A65000BA26CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C342867A65000BA26CC /* AppDelegate.swift */; };
 		D2C46C372867A65000BA26CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C362867A65000BA26CC /* SceneDelegate.swift */; };
-		D2C46C392867A65000BA26CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C382867A65000BA26CC /* ViewController.swift */; };
 		D2C46C3C2867A65000BA26CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C46C3A2867A65000BA26CC /* Main.storyboard */; };
 		D2C46C3E2867A65100BA26CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C46C3D2867A65100BA26CC /* Assets.xcassets */; };
 		D2C46C412867A65100BA26CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C46C3F2867A65100BA26CC /* LaunchScreen.storyboard */; };
@@ -17,13 +16,14 @@
 		D2C46C4D2867A91D00BA26CC /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C4C2867A91D00BA26CC /* EventListCoordinator.swift */; };
 		D2C46C4F2867A97D00BA26CC /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C4E2867A97D00BA26CC /* EventListViewController.swift */; };
 		D2C46C512867AB7800BA26CC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C502867AB7800BA26CC /* UIColor+Extensions.swift */; };
+		D2C46C572867ADC000BA26CC /* Wen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C552867ADC000BA26CC /* Wen.xcdatamodeld */; };
+		D2C46C592867AE4D00BA26CC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C582867AE4D00BA26CC /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2C46C312867A65000BA26CC /* Wen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C46C342867A65000BA26CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C46C362867A65000BA26CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2C46C382867A65000BA26CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2C46C3B2867A65000BA26CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2C46C3D2867A65100BA26CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C46C402867A65100BA26CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +32,8 @@
 		D2C46C4C2867A91D00BA26CC /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		D2C46C4E2867A97D00BA26CC /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		D2C46C502867AB7800BA26CC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D2C46C562867ADC000BA26CC /* Wen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wen.xcdatamodel; sourceTree = "<group>"; };
+		D2C46C582867AE4D00BA26CC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +66,44 @@
 		D2C46C332867A65000BA26CC /* Wen */ = {
 			isa = PBXGroup;
 			children = (
-				D2C46C342867A65000BA26CC /* AppDelegate.swift */,
-				D2C46C362867A65000BA26CC /* SceneDelegate.swift */,
-				D2C46C382867A65000BA26CC /* ViewController.swift */,
-				D2C46C3A2867A65000BA26CC /* Main.storyboard */,
-				D2C46C3D2867A65100BA26CC /* Assets.xcassets */,
-				D2C46C3F2867A65100BA26CC /* LaunchScreen.storyboard */,
 				D2C46C422867A65100BA26CC /* Info.plist */,
-				D2C46C4A2867A79000BA26CC /* AppCoordinator.swift */,
-				D2C46C4C2867A91D00BA26CC /* EventListCoordinator.swift */,
-				D2C46C4E2867A97D00BA26CC /* EventListViewController.swift */,
-				D2C46C502867AB7800BA26CC /* UIColor+Extensions.swift */,
+				D2C46C3D2867A65100BA26CC /* Assets.xcassets */,
+				D2C46C542867AD7400BA26CC /* Application */,
+				D2C46C532867AD5100BA26CC /* EventList */,
+				D2C46C522867AD4800BA26CC /* Extensions */,
+				D2C46C3F2867A65100BA26CC /* LaunchScreen.storyboard */,
+				D2C46C3A2867A65000BA26CC /* Main.storyboard */,
+				D2C46C552867ADC000BA26CC /* Wen.xcdatamodeld */,
+				D2C46C582867AE4D00BA26CC /* CoreDataManager.swift */,
 			);
 			path = Wen;
+			sourceTree = "<group>";
+		};
+		D2C46C522867AD4800BA26CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2C46C502867AB7800BA26CC /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2C46C532867AD5100BA26CC /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				D2C46C4C2867A91D00BA26CC /* EventListCoordinator.swift */,
+				D2C46C4E2867A97D00BA26CC /* EventListViewController.swift */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		D2C46C542867AD7400BA26CC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D2C46C342867A65000BA26CC /* AppDelegate.swift */,
+				D2C46C362867A65000BA26CC /* SceneDelegate.swift */,
+				D2C46C4A2867A79000BA26CC /* AppCoordinator.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +179,11 @@
 			files = (
 				D2C46C4B2867A79000BA26CC /* AppCoordinator.swift in Sources */,
 				D2C46C4F2867A97D00BA26CC /* EventListViewController.swift in Sources */,
-				D2C46C392867A65000BA26CC /* ViewController.swift in Sources */,
 				D2C46C352867A65000BA26CC /* AppDelegate.swift in Sources */,
+				D2C46C572867ADC000BA26CC /* Wen.xcdatamodeld in Sources */,
 				D2C46C512867AB7800BA26CC /* UIColor+Extensions.swift in Sources */,
 				D2C46C372867A65000BA26CC /* SceneDelegate.swift in Sources */,
+				D2C46C592867AE4D00BA26CC /* CoreDataManager.swift in Sources */,
 				D2C46C4D2867A91D00BA26CC /* EventListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2C46C552867ADC000BA26CC /* Wen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2C46C562867ADC000BA26CC /* Wen.xcdatamodel */,
+			);
+			currentVersion = D2C46C562867ADC000BA26CC /* Wen.xcdatamodel */;
+			path = Wen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D2C46C292867A65000BA26CC /* Project object */;
 }
