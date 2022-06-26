@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2AA5B012868B1BB0056E006 /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B002868B1BB0056E006 /* TitleSubtitleCell.swift */; };
+		D2AA5B032868B1D50056E006 /* TitleSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B022868B1D50056E006 /* TitleSubtitleViewModel.swift */; };
 		D2C46C352867A65000BA26CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C342867A65000BA26CC /* AppDelegate.swift */; };
 		D2C46C372867A65000BA26CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C46C362867A65000BA26CC /* SceneDelegate.swift */; };
 		D2C46C3C2867A65000BA26CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C46C3A2867A65000BA26CC /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2AA5B002868B1BB0056E006 /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
+		D2AA5B022868B1D50056E006 /* TitleSubtitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleViewModel.swift; sourceTree = "<group>"; };
 		D2C46C312867A65000BA26CC /* Wen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C46C342867A65000BA26CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C46C362867A65000BA26CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2AA5AFF2868B1AD0056E006 /* TitleSubtitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2AA5B002868B1BB0056E006 /* TitleSubtitleCell.swift */,
+				D2AA5B022868B1D50056E006 /* TitleSubtitleViewModel.swift */,
+			);
+			path = TitleSubtitleCell;
+			sourceTree = "<group>";
+		};
 		D2C46C282867A65000BA26CC = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		D2C46C5C2867B3AA00BA26CC /* AddEvent */ = {
 			isa = PBXGroup;
 			children = (
+				D2AA5AFF2868B1AD0056E006 /* TitleSubtitleCell */,
 				D2C46C5D2867B3B200BA26CC /* AddEventCoordinator.swift */,
 				D2C46C5F2867B53C00BA26CC /* AddEventViewController.swift */,
 				D2C46C632867B62000BA26CC /* AddEventViewModel.swift */,
@@ -200,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AA5B012868B1BB0056E006 /* TitleSubtitleCell.swift in Sources */,
 				D2C46C4B2867A79000BA26CC /* AppCoordinator.swift in Sources */,
 				D2C46C4F2867A97D00BA26CC /* EventListViewController.swift in Sources */,
 				D2C46C352867A65000BA26CC /* AppDelegate.swift in Sources */,
@@ -209,6 +224,7 @@
 				D2C46C512867AB7800BA26CC /* UIColor+Extensions.swift in Sources */,
 				D2C46C5E2867B3B200BA26CC /* AddEventCoordinator.swift in Sources */,
 				D2C46C372867A65000BA26CC /* SceneDelegate.swift in Sources */,
+				D2AA5B032868B1D50056E006 /* TitleSubtitleViewModel.swift in Sources */,
 				D2C46C602867B53C00BA26CC /* AddEventViewController.swift in Sources */,
 				D2C46C5B2867B2A400BA26CC /* EventListViewModel.swift in Sources */,
 				D2C46C592867AE4D00BA26CC /* CoreDataManager.swift in Sources */,
